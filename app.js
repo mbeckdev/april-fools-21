@@ -16,11 +16,7 @@ const jokes = [
     jokeImg: 'drool-alien-41612_640.png',
     objectFit: 'contain',
   },
-  {
-    jokeText: 'FOALS!',
-    jokeImg: 'foal-pexels-elina-sazonova-1838569.jpg',
-    objectFit: 'contain',
-  },
+
   {
     jokeText: 'JEWELS!',
     jokeImg: 'jewel-pexels-engin-akyurt-1458867.jpg',
@@ -41,6 +37,11 @@ const jokes = [
     jokeImg: 'tools-pexels-pixabay-162553.jpg',
     objectFit: 'cover',
   },
+  {
+    jokeText: 'FOALS!',
+    jokeImg: 'foal-pexels-elina-sazonova-1838569.jpg',
+    objectFit: 'contain',
+  },
 ];
 
 document.getElementById('hit-me-btn').addEventListener('click', hitMeClicked);
@@ -53,9 +54,10 @@ const april = document.getElementById('april');
 picture.style.opacity = '0%';
 
 let lastIndex = 0;
-
+let randomIndex = 0;
 function hitMeClicked() {
-  let randomIndex = Math.floor(Math.random() * jokes.length);
+  // let randomIndex = Math.floor(Math.random() * jokes.length);
+  randomIndex = getNewIndex();
 
   // changingTitle.textContent = jokes[randomIndex].jokeText;
   punchline.textContent = jokes[randomIndex].jokeText;
@@ -66,4 +68,14 @@ function hitMeClicked() {
 
   april.textContent = 'APRIL';
   picture.style.opacity = '100%';
+}
+
+function getNewIndex() {
+  randomIndex = Math.floor(Math.random() * jokes.length);
+  if (randomIndex == lastIndex) {
+    return getNewIndex();
+  } else {
+    lastIndex = randomIndex;
+    return randomIndex;
+  }
 }
