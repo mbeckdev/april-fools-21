@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(hsl(60, 50%, 50%), hsl(270, 50%, 50%));
+  height: 100vh;
+}
+
+img {
+  height: 640px;
+  width: 640px;
+  object-fit: contain;
+  /* fill contain cover none scale-down */
+  border: 1px solid red;
+}
