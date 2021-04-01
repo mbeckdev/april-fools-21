@@ -16,7 +16,6 @@ const jokes = [
     jokeImg: 'drool-alien-41612_640.png',
     objectFit: 'contain',
   },
-
   {
     jokeText: 'JEWELS!',
     jokeImg: 'jewel-pexels-engin-akyurt-1458867.jpg',
