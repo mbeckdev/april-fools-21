@@ -47,15 +47,23 @@ document.getElementById('hit-me-btn').addEventListener('click', hitMeClicked);
 
 const changingTitle = document.getElementById('title');
 const punchline = document.getElementById('punchline');
-
 const picture = document.getElementById('pic');
+const april = document.getElementById('april');
+
+picture.style.opacity = '0%';
+
+let lastIndex = 0;
 
 function hitMeClicked() {
   let randomIndex = Math.floor(Math.random() * jokes.length);
+
   // changingTitle.textContent = jokes[randomIndex].jokeText;
   punchline.textContent = jokes[randomIndex].jokeText;
 
   picture.setAttribute('src', `images/${jokes[randomIndex].jokeImg}`);
 
   picture.style.objectFit = jokes[randomIndex].objectFit;
+
+  april.textContent = 'APRIL';
+  picture.style.opacity = '100%';
 }
