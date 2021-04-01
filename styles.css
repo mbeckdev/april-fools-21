@@ -1,3 +1,9 @@
+:root {
+  --button-color: linear-gradient(hsl(60, 50%, 50%), hsl(60, 50%, 100%));
+  --button-color2: linear-gradient(hsl(60, 50%, 100%), hsl(60, 50%, 50%));
+  font-family: 'Ranchers', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +11,14 @@
 }
 
 body {
-  background: radial-gradient(hsl(60, 50%, 50%), hsl(270, 50%, 50%));
+  background: radial-gradient(hsl(60, 10%, 90%), hsl(212, 50%, 25%));
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+h1 {
+  margin-bottom: 10px;
 }
 
 img {
@@ -17,16 +27,51 @@ img {
   /* object-fit: contain; */
   /* object-fit: cover; */
   /* fill contain cover none scale-down */
-  border: 1px solid red;
+}
+
+#hit-me-btn {
+  border: none;
+
+  background: var(--button-color);
+
+  font-family: 'Ranchers', serif !important;
+  font-size: 2rem;
+
+  cursor: pointer;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  padding: 2px 20px;
+  margin: 2px;
+  box-shadow: 1px 1px 2px var(--main-shadow-color);
+
+  align-self: center;
+}
+
+#hit-me-btn:active {
+  background: var(--button-color2);
+}
+
+#punchline {
+  font-size: 50px;
+  padding-left: 20px;
+}
+
+#title {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
 #wrapper {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   max-width: 700px;
-  border: 1px solid green;
 }
 
 @media only screen and (min-width: 330px) and (orientation: portrait) {
