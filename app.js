@@ -11,6 +11,36 @@ const jokes = [
     jokeImg: 'mules-pexels-donald-tong-90915.jpg',
     objectFit: 'contain',
   },
+  {
+    jokeText: 'APRIL DROOLS!',
+    jokeImg: 'drool-alien-41612_640.png',
+    objectFit: 'contain',
+  },
+  {
+    jokeText: 'APRIL FOALS!',
+    jokeImg: 'foal-pexels-elina-sazonova-1838569.jpg',
+    objectFit: 'contain',
+  },
+  {
+    jokeText: 'APRIL JEWELS!',
+    jokeImg: 'jewel-pexels-engin-akyurt-1458867.jpg',
+    objectFit: 'scale-down',
+  },
+  {
+    jokeText: 'APRIL SCHOOLS!',
+    jokeImg: 'school-pexels-pixabay-207692.jpg',
+    objectFit: 'fill',
+  },
+  {
+    jokeText: 'APRIL STOOLS!',
+    jokeImg: 'stool-pexels-athena-2180883.jpg',
+    objectFit: 'fill',
+  },
+  {
+    jokeText: 'APRIL TOOLS!',
+    jokeImg: 'tools-pexels-pixabay-162553.jpg',
+    objectFit: 'cover',
+  },
 ];
 
 document.getElementById('hit-me-btn').addEventListener('click', hitMeClicked);
