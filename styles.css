@@ -14,7 +14,7 @@ body {
 img {
   height: 640px;
   width: 640px;
-  object-fit: contain;
+  /* object-fit: contain; */
   /* object-fit: cover; */
   /* fill contain cover none scale-down */
   border: 1px solid red;
